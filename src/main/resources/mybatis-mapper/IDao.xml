@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0/EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.pension.dao.IDao">
+
+
+
+<!-- Review SQL -->
+	<select id="review_listDao" resultType="com.example.pension.dto.BoardDto">
+		SELECT * FROM r_board ORDER BY rnum DESC
+	</select>
+
+	<insert id="r_inputDao">
+		INSERT INTO r_board (rnum, ruser, rname, rcontent, rscore)VALUES(r_board_seq.nextval, #{param1},#{param2},#{param3},#{param4})
+	</insert>
+	
+	
+<!-- Qna SQL -->	
+
+	<select id="qna_listDao" resultType="com.example.pension.dto.QboardDto">
+		SELECT * FROM qna_board ORDER BY qnum DESC
+	</select>
+
+	<insert id="q_inputDao">
+		INSERT INTO qna_board (qnum, qname, qtitle, qcontent, qphone)VALUES(qna_board_seq.nextval, #{param1},#{param2},#{param3},#{param4})
+	</insert>
+	
+	<select id="viewDao" resultType="com.example.pension.dto.QboardDto">
+		SELECT * FROM qna_board WHERE qnum = #{param1}	
+	</select>
+	
+	<delete id="deleteDao">
+		DELETE FROM qna_board WHERE qnum = #{param1}	
+	</delete>
+	
+</mapper>
