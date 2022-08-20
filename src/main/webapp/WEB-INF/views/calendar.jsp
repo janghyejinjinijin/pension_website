@@ -51,7 +51,7 @@
    </div>
 
 <div class="today_button_div">
-<input type="button" class="today_button" onclick="javascript:location.href='/calendar'" value="오늘"/> 
+<input type="button" class="today_button" onclick="javascript:location.href='/calendar'" value="오늘날짜로"/> 
 </div>
 <table class="calendar_body">
 
