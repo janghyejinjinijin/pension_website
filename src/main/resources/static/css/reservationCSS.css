@@ -1,3 +1,4 @@
+    
      body {
       scrollbar-face-color: #F6F6F6;
       scrollbar-highlight-color: #bbbbbb;
@@ -31,10 +32,16 @@
          font-weight:bold;
          text-align: center;
       }
-      .sat{
+      .sat {
+       color:#529dbc;
+      }
+      .sat a{
          color:#529dbc;
       }
       .sun{
+       color:red;
+      }
+      .sun a{
          color:red;
       }
       .today_button_div{

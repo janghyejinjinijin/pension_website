@@ -1,9 +1,12 @@
 package com.example.pension.dao;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import com.example.pension.dto.BoardDto;
 import com.example.pension.dto.QboardDto;
-
+import com.example.pension.dto.reservationDto;
+//import com.example.pension.dto.reservationDao;
 
 
 public interface IDao {
@@ -19,5 +22,12 @@ public interface IDao {
 	public void q_inputDao(String qname, String qtitle, String qcontent, String qphone);
 	public QboardDto viewDao(String qnum);
 	public void deleteDao(String qnum);
+	
+	//reserve_table
+	public void reservationInputDao(String name, String room_name, LocalDate startDate, LocalDate endDate, Integer rguest,String  bbq_yn,String campfire_yn );
+	
+	
+	//calendar_reservation_table
+	public ArrayList<reservationDto> reservationDao();
 	
 }

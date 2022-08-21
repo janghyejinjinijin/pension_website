@@ -7,11 +7,61 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DateData {
+	
 
 	String year = "";
 	String month = "";
 	String date = "";
 	String value = "";
+	String reservedP = "L";
+	String reservedC = "L";
+	String reservedJ = "L";
+	String reservedO = "L";
+	String roomName = "";
+	public String getRoomName() {
+		return roomName;
+	}
+
+	public void setRoomName(String roomName) {
+		this.roomName = roomName;
+	}
+
+
+
+	public String getReservedP() {
+		return reservedP;
+	}
+
+	public void setReservedP(String reservedP) {
+		this.reservedP = reservedP;
+	}
+
+	public String getReservedC() {
+		return reservedC;
+	}
+
+	public void setReservedC(String reservedC) {
+		this.reservedC = reservedC;
+	}
+
+	public String getReservedJ() {
+		return reservedJ;
+	}
+
+	public void setReservedJ(String reservedJ) {
+		this.reservedJ = reservedJ;
+	}
+
+	public String getReservedO() {
+		return reservedO;
+	}
+
+	public void setReservedO(String reservedO) {
+		this.reservedO = reservedO;
+	}
+
+
+
 	//스케쥴 추가시 아래처럼 
 	//		1. 변수 추가
 	//		2. getter/setter 추가
